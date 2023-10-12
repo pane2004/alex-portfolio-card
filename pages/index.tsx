@@ -3,7 +3,7 @@ import { ProfileTerminal } from "@/components/terminal";
 
 export default function Home() {
   return (
-    <main className={`flex flex-col min-h-screen bg-gray-950`}>
+    <main className={`flex flex-col min-h-screen bg-red-800`}>
       {/* Our SSH style card */}
       <section
         className={`flex flex-col flex-grow items-center justify-center p-24`}
