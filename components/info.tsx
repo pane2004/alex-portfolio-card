@@ -1,11 +1,17 @@
-export function ProfileInfo() {
+import { commitData } from "@/types/types";
+import Link from "next/link";
+
+export function ProfileInfo({ commitData }: { commitData: commitData }) {
   return (
     <ul className="text-left text-sky-300">
       <li>
         <span className="text-teal-500">OS:</span> Alex&apos;s Portfolio
       </li>
       <li>
-        <span className="text-teal-500">Kernel:</span> Commit Portfolio
+        <span className="text-teal-500">Kernel:</span> Commit {" #"}
+        <Link href={commitData?.link ? commitData.link : "#"} className="underline" target="_blank">
+          {commitData?.commit}
+        </Link>
       </li>
       <li>
         <span className="opacity-0">s</span>
@@ -29,10 +35,12 @@ export function ProfileInfo() {
         Python, MongoDB, Firebase, Docker, Linux, GCP, AWS, Web3
       </li>
       <li>
-        <span className="text-teal-500">Interests:</span> Blockchain, UX Design, Microservices
+        <span className="text-teal-500">Interests:</span> Blockchain, UX Design,
+        Microservices
       </li>
       <li>
-        <span className="text-teal-500">Hobbies:</span> Travelling, Hackathons, Leathercraft
+        <span className="text-teal-500">Hobbies:</span> Travelling, Hackathons,
+        Leathercraft
       </li>
       <li>
         <span className="opacity-0">s</span>
