@@ -9,7 +9,7 @@ export function Footer() {
       <span>Pictured: Me in the Wadi Rum Desert</span>
       <span className="flex flex-row">
         Made with ❤️ by Alex Lu.
-        <Link href={`#`}>
+        <Link href={"https://github.com/pane2004/alex-portfolio-card"} target="_blank">
           <span className={`flex flex-row items-center underline`}>
             <FaGithub className={`mr-2`} />
             Repository

@@ -32,7 +32,7 @@ export function ProfileInfo({ commitData }: { commitData: commitData }) {
       </li>
       <li className="max-w-lg overflow-hidden">
         <span className="text-teal-500">Technologies:</span> React, Node, Next,
-        Python, MongoDB, Firebase, Docker, Linux, GCP, AWS, Web3
+        Python Scripting, MongoDB, Firebase, Docker, Linux, GCP, AWS, Web3
       </li>
       <li>
         <span className="text-teal-500">Interests:</span> Blockchain, UX Design,

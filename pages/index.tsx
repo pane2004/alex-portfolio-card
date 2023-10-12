@@ -1,31 +1,16 @@
-import { Footer } from "@/components/footer";
-import { ProfileTerminal } from "@/components/terminal";
-import Image from "next/image";
-import BG from "@/public/test2.jpeg";
+import { HomeView } from "@/components/home/home";
 import { commitData } from "@/types/types";
+import { useRef } from "react";
 
 export default function Home({ commitData }: { commitData: commitData }) {
+  const timeOnMount = useRef(new Date());
+
   return (
-    <div className={`flex flex-col min-h-screen relative`}>
-      <Image 
-        src={BG} 
-        layout="fill" 
-        objectFit="cover"
-        quality={100} 
-        alt="Background Image" 
-        priority={true}
-        className="z-0"
-      />
-      {/* Terminal style card */}
-      <section
-        className={`flex flex-col flex-grow items-center justify-center p-24`}
-      >
-        <ProfileTerminal commitData={commitData}/>
-      </section>
-      <section className="z-10">
-        <Footer />
-      </section>
-    </div>
+    <section
+      className={`flex flex-col flex-grow items-center justify-center p-24`}
+    >
+      <HomeView commitData={commitData} time={timeOnMount.current} />
+    </section>
   );
 }
 
