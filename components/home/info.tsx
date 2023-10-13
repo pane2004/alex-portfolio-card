@@ -106,7 +106,6 @@ export function ProfileInfo({ commitData }: { commitData: commitData }) {
         <span className="text-teal-500">Email:{" "}</span>
         <Link
           href="mailto:a25lu@uwaterloo.ca"
-          target="_blank"
           className="hover:underline"
         >
           alex.lu@uwaterloo.ca
