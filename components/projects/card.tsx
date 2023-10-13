@@ -23,30 +23,39 @@ export function ProjectCard({
   tags,
 }: CardProps) {
   return (
-    <Terminal>
-      <span>
-        [~] <a className="text-orange-400 font-bold">&lambda;</a> git status
-      </span>
-      <div className="flex flex-col">
-        <Image src={image} width={100} alt={name} className="rounded-lg p-2" />
-        <Link
-          href={link}
-          className="flex flex-row items-center text-teal-500 hover:underline"
-          target="_blank"
-        >
-          <span className="text-2xl font-bold mr-2">{name}</span>
-          <FaUpRightFromSquare />
-        </Link>
-        <span className="max-w-sm">{about}</span>
-        <span className="text-sky-300">{tags}</span>
-      </div>
+    <div className="max-w-md">
+      <Terminal>
+        <span>
+          [~] <a className="text-orange-400 font-bold">&lambda;</a> git status
+        </span>
+        <div className="flex flex-row items-center">
+          <Image
+            src={image}
+            height={100}
+            alt={name}
+            className="rounded-lg p-2"
+          />
+          <div className="flex flex-col">
+            <Link
+              href={link}
+              className="flex flex-row items-center text-teal-500 hover:underline"
+              target="_blank"
+            >
+              <span className="text-2xl font-bold mr-2">{name}</span>
+              <FaUpRightFromSquare />
+            </Link>
+            <span className="max-w-sm text-sm">{about}</span>
+          </div>
+        </div>
+        <div className="text-sky-300">{tags}</div>
 
-      <span>
-        [~] <a className="text-orange-400 font-bold">&lambda;</a> git fetch{" "}
-        <Link href={repo} className="hover:underline" target="_blank">
-          {`${name}.git`}
-        </Link>
-      </span>
-    </Terminal>
+        <span>
+          [~] <a className="text-orange-400 font-bold">&lambda;</a> git fetch{" "}
+          <Link href={repo} className="hover:underline" target="_blank">
+            {`${name}.git`}
+          </Link>
+        </span>
+      </Terminal>
+    </div>
   );
 }
