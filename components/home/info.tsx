@@ -9,7 +9,11 @@ export function ProfileInfo({ commitData }: { commitData: commitData }) {
       </li>
       <li>
         <span className="text-teal-500">Kernel:</span> Commit {" #"}
-        <Link href={commitData?.link ? commitData.link : "#"} className="underline" target="_blank">
+        <Link
+          href={commitData?.link ? commitData.link : "#"}
+          className="underline"
+          target="_blank"
+        >
           {commitData?.commit}
         </Link>
       </li>
@@ -46,25 +50,67 @@ export function ProfileInfo({ commitData }: { commitData: commitData }) {
         <span className="opacity-0">s</span>
       </li>
       <li>
-        <span className="text-teal-500">Github:</span> @pane2004
+        <span className="text-teal-500">Github:{" "}</span>
+        <Link
+          href="https://github.com/pane2004"
+          target="_blank"
+          className="hover:underline"
+        >
+          @pane2004
+        </Link>
       </li>
       <li>
-        <span className="text-teal-500">LinkedIn:</span> @alex-lu04
+        <span className="text-teal-500">LinkedIn:{" "}</span>
+        <Link
+          href="https://www.linkedin.com/in/alex-lu04"
+          target="_blank"
+          className="hover:underline"
+        >
+          @alex-lu04
+        </Link>
       </li>
       <li>
-        <span className="text-teal-500">Devpost:</span> @alexlu2000clash
+        <span className="text-teal-500">Devpost:{" "}</span>
+        <Link
+          href="https://devpost.com/alexlu2000clash?"
+          target="_blank"
+          className="hover:underline"
+        >
+          @alexlu2000clash
+        </Link>
       </li>
       <li>
-        <span className="text-teal-500">Youtube:</span> @alexlu2000clash
+        <span className="text-teal-500">Youtube:{" "}</span>
+        <Link
+          href="https://www.youtube.com/@alexlu1745"
+          target="_blank"
+          className="hover:underline"
+        >
+          @Alex Lu
+        </Link>
       </li>
       <li>
-        <span className="text-teal-500">Discord:</span> @eanp
+        <span className="text-teal-500">Discord:{" "}</span>
+        <Link
+          href="https://discord.gg/4bwUVyuz9"
+          target="_blank"
+          className="hover:underline"
+        >
+          @eanp
+        </Link>
       </li>
       <li>
         <span className="opacity-0">s</span>
       </li>
       <li>
-        <span className="text-teal-500">Email:</span> alex.lu@uwaterloo.ca
+        <span className="text-teal-500">Email:{" "}</span>
+        <Link
+          href="mailto:a25lu@uwaterloo.ca"
+          target="_blank"
+          className="hover:underline"
+        >
+          alex.lu@uwaterloo.ca
+        </Link>
       </li>
     </ul>
   );
