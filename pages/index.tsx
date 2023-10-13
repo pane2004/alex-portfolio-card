@@ -16,11 +16,7 @@ export default function Home({ commitData }: { commitData: commitData }) {
 
 // hydrate home page
 export async function getServerSideProps() {
-  const res = await fetch(
-    process.env.NODE_ENV === "production"
-      ? "https://alexlu.ca/"
-      : "http://localhost:3000/" + "api/latestcommit"
-  );
+  const res = await fetch("https://alexlu.ca/api/latestcommit");
   const commitData = await res.json();
   return { props: { commitData } };
 }
