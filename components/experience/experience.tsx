@@ -17,10 +17,10 @@ export function ExperienceLine({
   link,
 }: ExperienceProps) {
   return (
-    <div className={`flex flex-col font-bold`}>
+    <div className={`flex flex-col`}>
       <span className="flex flex-row justify-between">
         <Link
-          className={`text-lg text-teal-500 hover:underline`}
+          className={`text-lg text-teal-500 hover:underline font-bold`}
           href={link}
           target="_blank"
         >
@@ -28,7 +28,7 @@ export function ExperienceLine({
         </Link>
         [{time}]
       </span>
-      {role}
+      <span className="font-medium">{role}</span>
       <span className="text-sm font-normal max-w-lg">{description}</span>
     </div>
   );
