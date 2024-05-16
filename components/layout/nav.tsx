@@ -9,7 +9,7 @@ export function TerminalNav({ time }: { time: Date }) {
         </span>
         <span>{`[${time.toLocaleTimeString()}]`}</span>
       </div>
-      <div className={`flex justify-between min-w-2xl text-slate-400`}>
+      <div className={`flex justify-between min-w-2xl text-slate-400 text-sm sm:text-base`}>
         <Link href={"/"} className="hover:underline">
           home
         </Link>

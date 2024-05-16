@@ -15,7 +15,7 @@ export function HomeView({ commitData, time }: { commitData: commitData, time: D
         </span>
         <span>{`[${time.toLocaleTimeString()}]`}</span>
       </div>
-      <div className={`flex flex-row overflow-auto`}>
+      <div className={`flex flex-col sm:flex-row overflow-auto gap-4`}>
         <ArchLogo />
         <ProfileInfo commitData={commitData} />
       </div>

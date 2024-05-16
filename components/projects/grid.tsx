@@ -10,7 +10,7 @@ import WWPP from "@/public/projects/ww.png";
 
 export function ProjectGrid() {
   return (
-    <div className={`grid grid-cols-2 gap-6`}>
+    <div className={`grid sm:grid-cols-2 gap-6`}>
       <ProjectCard
         name={"dBeats"}
         image={DBEATS}
