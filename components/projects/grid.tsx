@@ -29,7 +29,7 @@ export function ProjectGrid() {
         link={"https://wotion.co"}
         repo={"https://github.com/pane2004/wotion"}
         about={
-          "Wotion is an open-source library of fully customizable, dynamic widgets for Notion. 50,000+ Users, 80+ Github Stars."
+          "Wotion is an open-source library of fully customizable, dynamic widgets for Notion. 10,000+ Users, 50+ Github Stars."
         }
         tags={
           "<<React.js>> <<Chakra UI>> <<Node.js>> <<MongoDB>> <<Axios>> <<REST API>>"

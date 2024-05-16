@@ -23,24 +23,25 @@ export function ProfileInfo({ commitData }: { commitData: commitData }) {
       <li>
         <span className="text-teal-500">Name:</span> Alex Lu
       </li>
-      <li>
-        <span className="text-teal-500">Title:</span> Fullstack Developer
+      <li className="max-w-lg overflow-hidden">
+        <span className="text-teal-500">Bio:</span> Software developer and
+        researcher exploring Human-Computer Interaction, Web Accessibility, LLMs.
       </li>
       <li>
-        <span className="text-teal-500">Education:</span> Sophomore CS Student
-        @UWaterloo
+        <span className="text-teal-500">Education:</span> CS Student at the
+        University of Waterloo
       </li>
       <li>
-        <span className="text-teal-500">Experience:</span> Prev. SWE @Query-It,
-        @Kinoto
+        <span className="opacity-0">s</span>
+      </li>
+      <li className="max-w-lg overflow-hidden">
+        <span className="text-teal-500">Experience:</span> Prev. Research Dev
+        @UWaterloo HCI, Fullstack SWE @Query-It, Data Dev @Kinoto
       </li>
       <li className="max-w-lg overflow-hidden">
         <span className="text-teal-500">Technologies:</span> React, Node, Next,
-        Python Scripting, MongoDB, Firebase, Docker, Linux, GCP, AWS, Web3
-      </li>
-      <li>
-        <span className="text-teal-500">Interests:</span> Blockchain, UX Design,
-        Microservices
+        Django, PyTorch, Numpy, Pandas, Postgres, MongoDB, Firebase, Docker,
+        Linux, GCP, Azure, AWS, Web3
       </li>
       <li>
         <span className="text-teal-500">Hobbies:</span> Travelling, Hackathons,
@@ -50,7 +51,7 @@ export function ProfileInfo({ commitData }: { commitData: commitData }) {
         <span className="opacity-0">s</span>
       </li>
       <li>
-        <span className="text-teal-500">Github:{" "}</span>
+        <span className="text-teal-500">Github: </span>
         <Link
           href="https://github.com/pane2004"
           target="_blank"
@@ -60,7 +61,7 @@ export function ProfileInfo({ commitData }: { commitData: commitData }) {
         </Link>
       </li>
       <li>
-        <span className="text-teal-500">LinkedIn:{" "}</span>
+        <span className="text-teal-500">LinkedIn: </span>
         <Link
           href="https://www.linkedin.com/in/alex-lu04"
           target="_blank"
@@ -70,7 +71,7 @@ export function ProfileInfo({ commitData }: { commitData: commitData }) {
         </Link>
       </li>
       <li>
-        <span className="text-teal-500">Devpost:{" "}</span>
+        <span className="text-teal-500">Devpost: </span>
         <Link
           href="https://devpost.com/alexlu2000clash?"
           target="_blank"
@@ -80,34 +81,11 @@ export function ProfileInfo({ commitData }: { commitData: commitData }) {
         </Link>
       </li>
       <li>
-        <span className="text-teal-500">Youtube:{" "}</span>
-        <Link
-          href="https://www.youtube.com/@alexlu1745"
-          target="_blank"
-          className="hover:underline"
-        >
-          @Alex Lu
-        </Link>
-      </li>
-      <li>
-        <span className="text-teal-500">Discord:{" "}</span>
-        <Link
-          href="https://discord.gg/4bwUVyuz9"
-          target="_blank"
-          className="hover:underline"
-        >
-          @eanp
-        </Link>
-      </li>
-      <li>
         <span className="opacity-0">s</span>
       </li>
       <li>
-        <span className="text-teal-500">Email:{" "}</span>
-        <Link
-          href="mailto:a25lu@uwaterloo.ca"
-          className="hover:underline"
-        >
+        <span className="text-teal-500">Email: </span>
+        <Link href="mailto:a25lu@uwaterloo.ca" className="hover:underline">
           alex.lu@uwaterloo.ca
         </Link>
       </li>

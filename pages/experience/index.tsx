@@ -20,7 +20,21 @@ export default function Experience() {
           </span>
           <span>{`[${timeOnMount.current.toLocaleTimeString()}]`}</span>
         </div>
-        <div className="py-2 space-y-2">
+        <div className="py-2 space-y-2 min-w-6xl">
+          <ExperienceLine
+            company="University of Waterloo (AI Lab)"
+            time="May 2024 - Present"
+            role="Undergraduate Research Assistant"
+            description="Designing multilingual in-context retrieval LLM agents and maintaining newcomers app research project for field study."
+            link="https://edithlaw.ca/people.html"
+          />
+          <ExperienceLine
+            company="University of Waterloo (AI Lab)"
+            time="Jan. 2024 - Apr. 2024"
+            role="HCI Researcher and Developer Co-op"
+            description='Built the newcomers app research project frontend from scratch using React Native, GitlabCI, and Expo. Led all AI deployments and integrations using AWS, Flask, and Docker. Received "Outstanding" work term evaluation.'
+            link="https://cs.uwaterloo.ca/news/professor-edith-law-receives-graham-seed-fund-field-test"
+          />
           <ExperienceLine
             company="Query-It"
             time="May 2023 - Aug. 2023"
