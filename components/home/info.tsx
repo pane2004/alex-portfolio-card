@@ -5,7 +5,7 @@ export function ProfileInfo({ commitData }: { commitData: commitData }) {
   return (
     <ul className="text-left text-sky-300">
       <li>
-        <span className="text-teal-500">OS:</span> Alex&apos;s Portfolio
+        <span className="text-teal-500">OS:</span> Alex&apos;s Website
       </li>
       <li>
         <span className="text-teal-500">Kernel:</span> Commit {" #"}
@@ -25,7 +25,7 @@ export function ProfileInfo({ commitData }: { commitData: commitData }) {
       </li>
       <li className="max-w-lg overflow-hidden">
         <span className="text-teal-500">Bio:</span> Software developer and
-        researcher exploring Human-Computer Interaction, Web Accessibility, LLMs.
+        researcher exploring Human-Computer Interaction, Web3, LLMs.
       </li>
       <li>
         <span className="text-teal-500">Education:</span> CS Student at the
@@ -35,13 +35,17 @@ export function ProfileInfo({ commitData }: { commitData: commitData }) {
         <span className="opacity-0">s</span>
       </li>
       <li className="max-w-lg overflow-hidden">
-        <span className="text-teal-500">Experience:</span> Prev. Research Dev
-        @UWaterloo HCI, Fullstack SWE @Query-It, Data Dev @Kinoto
+        <span className="text-teal-500">Current:</span> SWE @Coinbase AM, URA
+        @UWaterloo HCI
       </li>
       <li className="max-w-lg overflow-hidden">
-        <span className="text-teal-500">Technologies:</span> React, Node, Next,
-        Django, PyTorch, Numpy, Pandas, Postgres, MongoDB, Firebase, Docker,
-        Linux, GCP, Azure, AWS, Web3
+        <span className="text-teal-500">Previous Experience:</span> Research Dev
+        @UWaterloo HCI, Software Dev @Query-It, Data Dev @Kinoto
+      </li>
+      <li className="max-w-lg overflow-hidden">
+        <span className="text-teal-500">Technologies:</span> React, React
+        Native, Node, Next, Django, PyTorch, Postgres, MongoDB, Solidity,
+        Docker, Linux, GCP, Azure, AWS, Ethers, Foundry
       </li>
       <li>
         <span className="text-teal-500">Hobbies:</span> Travelling, Hackathons,

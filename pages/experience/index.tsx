@@ -22,14 +22,21 @@ export default function Experience() {
         </div>
         <div className="py-2 space-y-2 min-w-6xl">
           <ExperienceLine
-            company="University of Waterloo (AI Lab)"
+            company="Coinbase AM"
+            time="Sep. 2024 - Present"
+            role="Software Engineering Intern"
+            description="Directly Responsible Engineer for the Diamond Excel Add-In project, building internal foundry tooling, and working on on-chain financial market POCs."
+            link="https://www.coinbase.com/en-ca/blog/coinbase-and-coinbase-asset-management-announce-project-diamond-a-smart"
+          />
+          <ExperienceLine
+            company="University of Waterloo HCI"
             time="May 2024 - Present"
             role="Undergraduate Research Assistant"
             description="Designing multilingual in-context retrieval LLM agents and maintaining newcomers app research project for field study."
             link="https://edithlaw.ca/people.html"
           />
           <ExperienceLine
-            company="University of Waterloo (AI Lab)"
+            company="University of Waterloo HCI"
             time="Jan. 2024 - Apr. 2024"
             role="HCI Researcher and Developer Co-op"
             description='Built the newcomers app research project frontend from scratch using React Native, GitlabCI, and Expo. Led all AI deployments and integrations using AWS, Flask, and Docker. Received "Outstanding" work term evaluation.'
@@ -42,13 +49,6 @@ export default function Experience() {
             description='Delivered critical features using React.js, Firebase, and the GCP
             suite. Received "Outstanding" work term evaluation.'
             link="https://queryitapp.com"
-          />
-          <ExperienceLine
-            company="UWaterloo Rocketry Design Team"
-            time="Sep. 2022 - Dec. 2022"
-            role="Software Developer"
-            description="Implemented fixes, features, and tests for internal management bot, working with Jest and AWS Lambda"
-            link="https://www.waterloorocketry.com/"
           />
           <ExperienceLine
             company="Kinoto"
