@@ -5,7 +5,7 @@ export function ProfileInfo({ commitData }: { commitData: commitData }) {
   return (
     <ul className="text-left text-sky-300">
       <li>
-        <span className="text-teal-500">OS:</span> Alex&apos;s Website
+        <span className="text-teal-500">OS:</span>{' '}Alex&apos;s Website
       </li>
       <li>
         <span className="text-teal-500">Kernel:</span> Commit {" #"}
@@ -35,17 +35,12 @@ export function ProfileInfo({ commitData }: { commitData: commitData }) {
         <span className="opacity-0">s</span>
       </li>
       <li className="max-w-lg overflow-hidden">
-        <span className="text-teal-500">Current:</span> SWE @Coinbase AM, URA
+        <span className="text-teal-500">Current:</span> SWE @Coinbase, URA
         @UWaterloo HCI
       </li>
       <li className="max-w-lg overflow-hidden">
-        <span className="text-teal-500">Previous Experience:</span> Research Dev
-        @UWaterloo HCI, Software Dev @Query-It, Data Dev @Kinoto
-      </li>
-      <li className="max-w-lg overflow-hidden">
-        <span className="text-teal-500">Technologies:</span> React, React
-        Native, Node, Next, Django, PyTorch, Postgres, MongoDB, Solidity,
-        Docker, Linux, GCP, Azure, AWS, Ethers, Foundry
+        <span className="text-teal-500">Previous Experience:</span> SWE @Coinbase AM, Research Dev
+        @UWaterloo HCI, Software Dev @Query-It
       </li>
       <li>
         <span className="text-teal-500">Hobbies:</span> Travelling, Hackathons,

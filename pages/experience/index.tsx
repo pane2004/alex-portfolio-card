@@ -18,11 +18,18 @@ export default function Experience() {
           <TimeStamp />
         </div>
         <div className="py-2 space-y-2 min-w-6xl">
+        <ExperienceLine
+            company="Coinbase"
+            time="May 2025 - Present"
+            role="Software Engineering"
+            description="Building Applied AI and Advanced EVM Transactions on the Base App, deployed to millions of users."
+            link="https://www.coinbase.com/"
+          />
           <ExperienceLine
             company="Coinbase AM"
-            time="Sep. 2024 - Present"
+            time="Sep. 2024 - Dec. 2024"
             role="Software Engineering Intern"
-            description="Directly Responsible Engineer for the Diamond Excel Add-In project, building internal foundry tooling, and working on on-chain financial market POCs."
+            description="DRE for the Diamond Excel Add-In, building internal foundry tooling, and working on on-chain financial market POCs."
             link="https://www.coinbase.com/en-ca/blog/coinbase-and-coinbase-asset-management-announce-project-diamond-a-smart"
           />
           <ExperienceLine
@@ -36,30 +43,15 @@ export default function Experience() {
             company="University of Waterloo HCI"
             time="Jan. 2024 - Apr. 2024"
             role="HCI Researcher and Developer Co-op"
-            description='Built the newcomers app research project frontend from scratch using React Native, GitlabCI, and Expo. Led all AI deployments and integrations using AWS, Flask, and Docker. Received "Outstanding" work term evaluation.'
+            description='Led all AI deployments and integrations using AWS, Flask, and Docker for the newcomers app research project.'
             link="https://cs.uwaterloo.ca/news/professor-edith-law-receives-graham-seed-fund-field-test"
           />
           <ExperienceLine
             company="Query-It"
             time="May 2023 - Aug. 2023"
             role="Software Developer Intern"
-            description='Delivered critical features using React.js, Firebase, and the GCP
-            suite. Received "Outstanding" work term evaluation.'
+            description='Delivered big features using React, Firebase, and GCP'
             link="https://queryitapp.com"
-          />
-          <ExperienceLine
-            company="Kinoto"
-            time="Jun. 2022 - Aug. 2022"
-            role="Data Developer"
-            description="Significantly improved merchant data analytics with custom Python Scripts and MS Power BI migration."
-            link="https://kinoto.ca"
-          />
-          <ExperienceLine
-            company="MyGrant Canada"
-            time="Mar. 2021 - Mar. 2022"
-            role="Co-Founder"
-            description="Led team to develop tool for businesses to find grants during the pandemic. Raised $4000+ in funding for project."
-            link="https://mygrant.ca"
           />
         </div>
         <TerminalNav />
