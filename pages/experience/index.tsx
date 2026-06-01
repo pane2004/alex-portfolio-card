@@ -2,12 +2,9 @@ import { ExperienceLine } from "@/components/experience/experience";
 import { TerminalNav } from "@/components/layout/nav";
 import { Terminal } from "@/components/layout/terminal";
 import { Timer } from "@/components/layout/timer";
-import Link from "next/link";
-import { useRef } from "react";
+import { TimeStamp } from "@/components/layout/timestamp";
 
 export default function Experience() {
-  const timeOnMount = useRef(new Date());
-
   return (
     <section
       className={`flex flex-col flex-grow items-center justify-center text-slate-400 p-24`}
@@ -18,7 +15,7 @@ export default function Experience() {
             [~] <a className="text-orange-400 font-bold">&lambda;</a> cat
             experience.txt
           </span>
-          <span>{`[${timeOnMount.current.toLocaleTimeString()}]`}</span>
+          <TimeStamp />
         </div>
         <div className="py-2 space-y-2 min-w-6xl">
           <ExperienceLine
@@ -65,7 +62,7 @@ export default function Experience() {
             link="https://mygrant.ca"
           />
         </div>
-        <TerminalNav time={timeOnMount.current} />
+        <TerminalNav />
         <Timer />
       </Terminal>
     </section>

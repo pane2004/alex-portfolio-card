@@ -17,12 +17,11 @@ export default function App({ Component, pageProps }: AppProps) {
     >
       <Image
         src={BG}
-        layout="fill"
-        objectFit="cover"
-        quality={100}
         alt="Background Image"
-        priority={true}
-        className="z-0"
+        fill
+        quality={100}
+        priority
+        className="object-cover z-0"
       />
       <Component {...pageProps} />
       <section className="z-10">

@@ -1,13 +1,14 @@
 import Link from "next/link";
+import { TimeStamp } from "./timestamp";
 
-export function TerminalNav({ time }: { time: Date }) {
+export function TerminalNav() {
   return (
     <>
       <div className={`flex justify-between min-w-2xl text-slate-400`}>
         <span>
           [~] <a className="text-orange-400 font-bold">&lambda;</a> ls
         </span>
-        <span>{`[${time.toLocaleTimeString()}]`}</span>
+        <TimeStamp />
       </div>
       <div
         className={`flex justify-between min-w-2xl text-slate-400 text-sm sm:text-base`}
@@ -24,7 +25,7 @@ export function TerminalNav({ time }: { time: Date }) {
         <Link href={"/sandbox"} className="hover:underline">
           publications
         </Link>
-        <span>{`[${time.toLocaleTimeString()}]`}</span>
+        <TimeStamp />
       </div>
     </>
   );
