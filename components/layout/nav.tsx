@@ -22,7 +22,7 @@ export function TerminalNav() {
         <Link href={"/projects"} className="hover:underline">
           projects
         </Link>
-        <Link href={"/sandbox"} className="hover:underline">
+        <Link href={"/publications"} className="hover:underline">
           publications
         </Link>
         <TimeStamp />
