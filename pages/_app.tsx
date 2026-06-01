@@ -13,7 +13,7 @@ const jetBrains = JetBrains_Mono({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <main
-      className={`flex flex-col min-h-screen relative ${jetBrains.className}`}
+      className={`flex flex-col h-screen overflow-hidden relative ${jetBrains.className}`}
     >
       <Image
         src={BG}
@@ -23,8 +23,10 @@ export default function App({ Component, pageProps }: AppProps) {
         priority
         className="object-cover z-0"
       />
-      <Component {...pageProps} />
-      <section className="z-10">
+      <div className="z-10 flex flex-col flex-grow min-h-0 overflow-y-auto">
+        <Component {...pageProps} />
+      </div>
+      <section className="z-10 shrink-0">
         <Footer />
       </section>
     </main>
